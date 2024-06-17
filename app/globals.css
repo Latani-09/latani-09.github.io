@@ -27,7 +27,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.header{
+  @apply flex flex-row h-16 bg-white; 
+}
+.navbar{
+  @apply flex flex-row justify-between items-center
 
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
