@@ -4,16 +4,16 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 4, 48, 40;
-  --background-end-rgb: 255, 255, 255;
-  --tw-gradient-stops:var(--background-start-rgb),var(var(--background-end-rgb))
+  --background-end-rgb: rgb(35, 37, 47);
+  --background-start-rgb:rgb(35, 37, 47);
+  --tw-gradient-stops:var(--background-start-rgb),var(--background-end-rgb)
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb:0,0,0;
-    --background-end-rgb: 4, 48, 40;
+    --background-end-rgb: 35, 37, 47;
+    --background-start-rgb:35, 37, 47;
     --tw-gradient-stops:var(--background-start-rgb),var(var(--background-end-rgb))
   }
 }
@@ -28,14 +28,57 @@ body {
     rgb(var(--background-start-rgb));
 }
 .header{
-  @apply flex flex-row h-16 bg-white; 
+  @apply flex flex-row justify-evenly h-16 w-full items-center; 
+  
 }
+.title{ 
+  @apply text-xl  text-white ;
+ }
 .navbar{
-  @apply flex flex-row justify-between items-center
-
+  @apply flex flex-row justify-end;
+}
+.nav{
+  @apply mx-5 p-3; 
+}
+.nav :hover{
+  @apply  bg-slate-500 ;
+  border-radius: 10px;
 }
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.section{
+  @apply rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
 }

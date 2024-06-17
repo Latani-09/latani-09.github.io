@@ -1,5 +1,6 @@
 export default function Navbar(){
     return <div className="header">
+        <div className="title">Tharmakulasingam Latani</div>
         <div className="navbar">
         <div className="nav">About</div>
         <div className="nav">Projects</div>
