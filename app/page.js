@@ -22,23 +22,23 @@ export default function Home() {
       </h2>
       <div className="gallery">
   <div className="gallery-item">
-    <img src="/API5.png" alt="API Integration Icon" className="icon" />
+    <Image src="/API5.png" alt="API Integration Icon" className="icon" />
     <p className="description">API Integration</p>
   </div>
   <div className="gallery-item">
-    <img src="/lazy loading.png" alt="Lazy Loading Icon" className="icon " />
+    <Image src="/lazy loading.png" alt="Lazy Loading Icon" className="icon " />
     <p className="description">Lazy Loading</p>
   </div>
   <div className="gallery-item">
-    <img src="/Redux.png" alt="Redux State Management Icon" className="icon" />
+    <Image src="/Redux.png" alt="Redux State Management Icon" className="icon" />
     <p className="description">Redux State Management</p>
   </div>
   <div className="gallery-item">
-    <img src="/RSVP2.png" alt="RSVP Implementations Icon" className="icon mb-30" />
+    <Image src="/RSVP2.png" alt="RSVP Implementations Icon" className="icon mb-30" />
     <p className="description">RSVP Implementations</p>
   </div>
   <div className="gallery-item">
-    <img src="/responsive3.png" alt="Responsive Web Pages Icon" className="icon" />
+    <Image src="/responsive3.png" alt="Responsive Web Pages Icon" className="icon" />
     <p className="description">Responsive Web Pages</p>
   </div>
 </div>
