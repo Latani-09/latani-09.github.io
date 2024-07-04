@@ -7,7 +7,7 @@ export default function Home() {
   <div className="mb-32 grid text-center lg:max-w-5xl w-full lg:mb-0  lg:text-left">
     <div className="section ">
       <h2 className="mb-5 text-2xl font-semibold">
-      Hello! I'm Tharmakulasingam Latani,
+      Hello! I&apos;m Tharmakulasingam Latani,
       </h2>
       <p className="m-0  text-lg opacity-50">
       A  developer primarily working in the frontend with the React framework . 
